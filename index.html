@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-paper-scissors</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container container-light">
+        <header>
+            <div class="title title-light">
+                <p>Rock</p>
+                <p>Paper</p>
+                <p>Scissors</p>
+                <p>Lizard</p>
+                <p>Spock</p>
+            </div>
+            <div class="score score-light">
+                <p>Computer: <span id="comp_score">0</span></p>
+                <p>User: <span id="user_score">0</span></p>
+            </div>
+        </header>
+
+        <div class="main-part">
+            <button title="Rock" onclick="clicked('Rock')"><i class="far fa-hand-rock"></i></button>
+            <button title="Paper" onclick="clicked('Paper')"><i class="far fa-hand-paper"></i></button>
+            <button title="Scissors" onclick="clicked('Scissors')"><i class="far fa-hand-scissors"></i></button>
+            <button title="Lizard" onclick="clicked('Lizard')"><i class="far fa-hand-lizard"></i></button>
+            <button title="Spock" onclick="clicked('Spock')"><i class="far fa-hand-spock"></i></button>
+        </div>
+        <div class="last-part">
+            <p class="choosing-part-comp p-light" id="compChoice"></p>
+            <p class="choosing-part-user p-light" id="userChoice"></p>
+            <p id="result"></p>
+        </div>
+
+        
+
+            
+        
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="./scripts/darkMode.js"></script>
+</body>
+</html>
